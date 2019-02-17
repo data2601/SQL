@@ -1,0 +1,11 @@
+---
+- name: create push image
+  hosts:localhost
+  connection: local
+  tasks: Docker 
+
+- name: Tag and push to docker hub
+  docker_image:
+    name: tomcat
+    repository: dcoppenhagan/myimage:7.56
+    push: yes
