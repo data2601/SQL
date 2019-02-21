@@ -2,15 +2,7 @@
 - name: Install Mysql on Ubuntu
   hosts: 192.168.1.110
   tasks:
-  - name: Download sources
-    get_url:
-      url: http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
-      dest: /root/mysql
-  - name: Install package
-    apt:
-      name: /root/mysql/mysql-community-release-el7-5.noarch.rpm
-      state: present
-  - name: Install MySQL
+  - name: install SQL
     apt: 
       name=mysql-server
       state=installed
