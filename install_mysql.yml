@@ -7,11 +7,11 @@
       url: http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
       dest: /opt/mysql
   - name: Install package
-    apt-get:
+    apt:
       name: /opt/mysql/mysql-community-release-el7-5.noarch.rpm
       state: present
   - name: Install MySQL
-    apt-get: 
+    apt: 
       name=mysql-server
       state=installed
   - name: Add mysql-user
