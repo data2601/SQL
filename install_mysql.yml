@@ -11,6 +11,7 @@
     copy:
       src=./files/my.cnf
       dest=/etc/mysql/my.cnf
+      remote_src: yes
       owner=root
       group=root
       mode=0640
