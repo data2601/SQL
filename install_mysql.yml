@@ -1,7 +1,6 @@
 ---
 - name: Install Mysql on Ubuntu
   hosts: 192.168.1.110
-  connections: localhost
   tasks:
     - name: Download sources
       get_url:
