@@ -5,10 +5,10 @@
   - name: Download sources
     get_url:
       url: http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
-      dest: /opt/mysql
+      dest: /root/mysql
   - name: Install package
     apt:
-      name: /opt/mysql/mysql-community-release-el7-5.noarch.rpm
+      name: /root/mysql/mysql-community-release-el7-5.noarch.rpm
       state: present
   - name: Install MySQL
     apt: 
