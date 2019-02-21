@@ -7,17 +7,6 @@
       name=mysql-server
       name=python-mysqldb
       state=installed
-- name: Configure MySQL
-  hosts: 192.168.1.110
-  tasks:
-  - name: Configure my.cnf
-    copy:
-      src=./files/my.cnf
-      dest=/etc/mysql/my.cnf
-      owner=root
-      group=root
-      mode=0640
-    remote_src= yes  
 - name: Add mysql-user
   hosts: 192.168.1.110
   tasks:    
