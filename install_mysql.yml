@@ -6,7 +6,10 @@
     apt: 
       name=mysql-server
       name=python-mysqldb
-      state=installed      
+      state=installed
+- name: Configure MySQL
+  hosts: mysql-service
+  tasks:
   - name: Configure my.cnf
     copy:
       src=./files/my.cnf
