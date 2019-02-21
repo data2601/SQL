@@ -6,6 +6,7 @@
     get_url:
       url: http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
       dest: /root/mysql
+      command: rpm -ivh mysql-community-release-el7-5.noarch.rpm
   - name: Install package
     apt:
       name: /root/mysql/mysql-community-release-el7-5.noarch.rpm
