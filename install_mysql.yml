@@ -3,7 +3,7 @@
   hosts: 192.168.30.93
   tasks:
   - name: install SQL
-    apt: 
+    yum: 
       name=mysql-server
       name=python-mysqldb
       state=installed
