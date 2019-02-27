@@ -12,7 +12,7 @@
   tasks:    
   - name: Add mysql-user
     mysql_user:
-      name=admin
+      name=pramod
       password=12345
       priv=*.*:ALL
       state=present
