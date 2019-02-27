@@ -16,10 +16,9 @@
   tasks:
   - name: Kych Nahi re   
       mysql_db:
-      name: customers
-      state: dump
-      name: all
-      target: /root/mysql/all_files.sql
+        name: customers
+        state: dump
+        target: /root/mysql/all_files.sql
  
       
       
