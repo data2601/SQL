@@ -8,7 +8,7 @@
       state: present
   - name: Copy database dump file to remote host and restore it to database 'my_db'
     copy:
-      src: C:\Users\Dell\Desktop\AWS\mysql\all_files.sql
+      src: C:\Users\Dell\Desktop\AWS\mysql\
       dest: /tmp/
       remote_src: yes      
   - name: Dump all databases to hostname.sql
