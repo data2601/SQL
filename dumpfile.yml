@@ -16,7 +16,7 @@
       state: dump
       name: all
       target: /root/mysql/all_files.sql
-      remote_src: yes
+      
       
 
 
