@@ -1,14 +1,14 @@
 ---
 - name: Install Mysql on Ubuntu
-  hosts: 192.168.30.93
+  hosts: 192.168.1.101
   tasks:
   - name: install SQL
-    yum: 
+    apt: 
       name=mysql-server
       name=python-mysqldb
       state=installed
 - name: Add mysql-user
-  hosts: 192.168.1.110
+  hosts: 192.168.1.101
   tasks:    
   - name: Add mysql-user
     mysql_user:
