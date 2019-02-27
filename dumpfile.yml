@@ -11,8 +11,11 @@
       src: /root/mysql/all_files.sql
       dest: /root/
       remote_src: yes      
-  - name: Dump all databases to hostname.sql
-    mysql_db:
+- name: Dump all databases to hostname.sql
+  hosts: 192.168.1.101
+  tasks:
+  - name: Kych Nahi re   
+      mysql_db:
       name: customers
       state: dump
       name: all
