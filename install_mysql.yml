@@ -3,13 +3,10 @@
   hosts: 192.168.30.93
   tasks:
   - name: install SQL
-    apt: 
+    yum: 
       name=mysql-server
       name=python-mysqldb
       state=installed
-- name: Add mysql-user
-  hosts: 192.168.30.93
-  tasks:    
   - name: Add mysql-user
     mysql_user:
       name=pramod
@@ -27,10 +24,7 @@
       name=mysql
       enabled=yes
       state=restarted
-- name:Database Automation
-  hosts:192.168.30.93
-  tasks:  
-  - name: Create a new database with name 'bobdata'
+  - name: Create a new database with name 'Customer'
     mysql_db:
       name: customers
       state: present
