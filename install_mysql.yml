@@ -1,6 +1,6 @@
 ---
 - name: Install Mysql on Ubuntu
-  hosts: 192.168.1.101
+  hosts: 192.168.30.93
   tasks:
   - name: install SQL
     apt: 
@@ -8,7 +8,7 @@
       name=python-mysqldb
       state=installed
 - name: Add mysql-user
-  hosts: 192.168.1.101
+  hosts: 192.168.30.93
   tasks:    
   - name: Add mysql-user
     mysql_user:
@@ -28,7 +28,7 @@
       enabled=yes
       state=restarted
 - name:Database Automation
-  hosts:192.168.1.101
+  hosts:192.168.30.93
   tasks:  
   - name: Create a new database with name 'bobdata'
     mysql_db:
